@@ -45,12 +45,6 @@ TOMP\\Demo_XJTU_11.m,Demo_XJTU_21.m
 
 ---
 
-## 🧪 Requirements
-
-- MATLAB R2020 or later
-
----
-
 ## 📈 Performance
 
 - **ODMP** achieves a **~98% reduction** in running time compared to classical OMP under orthogonal dictionaries.
