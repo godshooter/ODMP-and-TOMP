@@ -3,31 +3,26 @@
 This repository provides the implementation of two efficient sparse representation algorithms for fault signal processing:
 
 - **ODMP (Orthogonal Dictionary Matching Pursuit)**: A fast alternative to OMP when using orthogonal dictionaries.
+
 - **TOMP (Temporal Orthogonal Matching Pursuit)**: A computationally efficient OMP variant designed for overcomplete wavelet dictionaries with compact support, especially suitable for bearing fault signals.
 
----
+
+## 📄 Dataset Availability
+
+For the experimental cases described in the sections “Experimental Analysis of Train Bearing Fault Diagnosis at 100 km/h” and “Train Bearing Fault at 150 km/h”, the data cannot be made publicly available due to confidentiality agreements with the cooperating companies.
+
+this repository includes:
+
+- Code and results applied to simulation signals.
+
+- Examples using the publicly available XJTU-SY bearing dataset.
 
 ## 🔍 Features
 
 - Fast implementation for sparse signal reconstruction
-- Effective suppression of harmonic interference
-- Support for both orthogonal and overcomplete dictionaries
-- Validated on simulated and real-world bearing fault signals
-
----
-
-## 📂 Structure
-
-```bash
-ODMP-and-TOMP/
-│
-├── ODMP/              # ODMP implementation with test cases
-├── TOMP/              # TOMP implementation with Laplace wavelet dictionaries
-├── data/              # (Optional) Sample vibration signals
-├── figures/           # Output figures for publications or demonstration
-├── README.md          # Project introduction
-└── LICENSE            # License (MIT by default, or change accordingly)
-```
+- Effective suppression of harmonic interference(ODMP)
+- Effective extraction of impulsive components from noisy signals(TOMP)
+- Validated on simulated and XJTU bearing dataset fault signals
 
 ---
 
@@ -44,8 +39,8 @@ cd ODMP-and-TOMP
 
 3. Run demo scripts:
 ```matlab
-run_ODMP_example.m
-run_TOMP_example.m
+ODMP\\main.m
+TOMP\\Demo_XJTU_11.m,Demo_XJTU_21.m
 ```
 
 ---
@@ -53,7 +48,6 @@ run_TOMP_example.m
 ## 🧪 Requirements
 
 - MATLAB R2020 or later
-- Signal Processing Toolbox
 
 ---
 
@@ -64,21 +58,6 @@ run_TOMP_example.m
 
 ---
 
-## 📖 Reference
-
-If you find this work useful in your research, please cite:
-
-```bibtex
-@article{your_citation_info,
-  title={Fast Sparse Representation via ODMP and TOMP for Fault Diagnosis},
-  author={Yuan, ...},
-  journal={...},
-  year={2025}
-}
-```
-
----
-
 ## 📬 Contact
 
-For questions, feel free to open an issue or email: `your_email@example.com`
+For questions, feel free to open an issue or email: `903689426@qq.com`
