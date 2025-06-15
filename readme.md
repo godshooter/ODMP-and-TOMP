@@ -50,8 +50,3 @@ TOMP\\Demo_XJTU_11.m,Demo_XJTU_21.m
 - **ODMP** achieves a **~98% reduction** in running time compared to classical OMP under orthogonal dictionaries.
 - **TOMP** reduces redundant projections under overcomplete wavelet dictionaries, offering substantial speedup in real bearing fault analysis.
 
----
-
-## 📬 Contact
-
-For questions, feel free to open an issue or email: `903689426@qq.com`
