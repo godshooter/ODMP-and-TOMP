@@ -5,7 +5,7 @@ This repository provides the implementation of two efficient sparse representati
 - **ODMP (Orthogonal Dictionary Matching Pursuit)**: A fast alternative to OMP when using orthogonal dictionaries.
 
 - **TOMP (Temporal Orthogonal Matching Pursuit)**: A computationally efficient OMP variant designed for overcomplete wavelet dictionaries with compact support, especially suitable for bearing fault signals.
-
+- **Simulation**:  This folder contains the experimental workflow presented in the manuscript, demonstrating the complete fault diagnosis process for simulated bearing signals. It includes computationally efficient correlation-based parameter identification, dictionary construction, and sparse coefficient solving using TOMP. The simulation also reports the computational time for each stage, providing a clear reference for the efficiency of the proposed methods.
 
 ## 📄 Dataset Availability
 
@@ -41,7 +41,8 @@ cd ODMP-and-TOMP
 ```matlab
 ODMP\\main.m
 TOMP\\Demo_XJTU_11.m,Demo_XJTU_21.m
-```
+Simulation\\Demo_sim.m
+Simulation\\Demo_full_process.m
 
 ---
 
